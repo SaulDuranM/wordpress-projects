@@ -1,0 +1,20 @@
+$screen-xs-max: 767px;
+$screen-sm-min: 768px;
+$screen-sm-max: 991px;
+$screen-md-min: 992px;
+$screen-mdi-max: 1120px;
+$screen-md-max: 1200px;
+$screen-lg-min: 1280px;
+
+
+@media (min-width: $screen-md-min) and (max-width: $screen-lg-min){
+	//HOME SLIDER
+	/*.hero_home_item{
+		.hero_home_item_copy{
+			margin-top: 27.5vh !important;
+		}
+	}	
+	.container-fluid{
+		max-width: 1060px !important;
+	}	*/
+}

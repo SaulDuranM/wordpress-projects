@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    },
+    "classie.js": {
+      "bower": ["classie"]
+    },
+    "lazy-line-painter.js": {
+      "bower": ["lazy-line-painter"]
+    },
+    "modernizr.js": {
+      "bower": ["modernizr"]
+    }
+  },
+  "config": {
+    "devUrl": "http://example.dev"
+  }
+}

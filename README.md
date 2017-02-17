@@ -1,1 +1,3 @@
-# wordpress-projects
+# Wordpress Projects
+Code samples
+saulduran.mx

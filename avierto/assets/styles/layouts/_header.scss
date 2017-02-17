@@ -1,0 +1,448 @@
+/// OVERLAY MENU ///
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+.overlay-scale {
+	visibility: hidden;
+	opacity: 0;
+	@include transform(scale(1.05));
+    @include transition(all 0.5s cubic-bezier(.5,0,.2,1) 0.3s);
+    .avierto-main-container {
+        [class^="col-"] {
+            opacity:0;
+            @include transition(opacity 0.4s ease-in-out);
+            a {
+                h1 {
+                    @include transform(translate3d(0,20px,0));
+                    opacity:0;
+                    @include transition(all 1s cubic-bezier(.5,0,.2,1) 0.8s);
+                }
+            }
+        }
+        padding-bottom: 0;
+        @include transition(padding-bottom .4s ease-out);
+    }
+    .footer_menu {
+        bottom: -50px;
+        @include transition(bottom .4s ease-out);
+        @media screen and (min-width: $ipad-min-size) {
+	        display: none;
+	    }
+    }
+    
+	&.open {
+		visibility: visible;
+		opacity: 1;
+		@include transform(scale(1));
+    	@include transition(all 0.6s cubic-bezier(0,.5,.3,1));
+		.avierto-main-container {
+	        [class^="col-"] {
+	            opacity:1;
+	            @include transition(opacity 0.4s ease-in-out 0.5s);
+	            a {
+	                h1 {
+	                    @include transform(translate3d(0,0,0));
+	                    opacity:1;
+	                    @include transition(all 0.8s cubic-bezier(.5,0,.2,1) 0.5s);
+	                }
+	            }
+	        }
+	        @include transition(padding-bottom .4s ease-out 0.9s);
+	        padding-bottom: 47px;
+	        @media screen and (min-width: $ipad-min-size) {
+		        padding-bottom: 0;
+		    }
+	    }
+	    .footer_menu {
+	        bottom: 0;
+	        @include transition(bottom .4s ease-out 0.8s);
+	    }
+	}
+}
+
+/// OVERLAY MENU CONTENT ///
+.avierto-main-container {
+	height: 100vh;
+	min-height: 100%;
+	max-height: 100%;
+	overflow: hidden;
+	width: 100vw;
+	min-width: 100%;
+	max-width: 100%;
+	z-index: 0;
+	[class^="col-"] {
+        height: 50vh;
+        z-index: 3;
+        @extend .no-padding;
+        @extend .no-margin;
+        overflow: hidden;
+        background: $black_50;
+        @media screen and (max-width: $ipad-min-size - 1) {
+            height: 33.33%;
+        }
+    }
+    [class^="col-"]:first-child {
+        border: 1px solid $borde-oscuro;
+    }
+    [class^="col-"]:nth-child(2), [class^="col-"]:nth-child(3) {
+        border: 1px solid $borde-oscuro;
+        border-left: 0;
+    }
+    [class^="col-"]:nth-child(4) {
+        border: 1px solid $borde-oscuro;
+        border-top: 0;
+    }
+    [class^="col-"]:nth-child(5), [class^="col-"]:nth-child(6) {
+        border-top: 0;
+        border-left: 0;
+        border-right: 1px solid $borde-oscuro;
+        border-bottom: 1px solid $borde-oscuro;
+    }
+    @media screen and (max-width: $ipad-min-size - 1) {
+        [class^="col-"] {
+            background: $black_75;
+        }
+        [class^="col-"]:first-child {
+            border: 1px solid $borde-oscuro;
+        }
+        [class^="col-"]:nth-child(2) {
+            border-top: 1px solid $borde-oscuro;
+            border-right: 1px solid $borde-oscuro;
+            border-bottom: 1px solid $borde-oscuro;
+            border-left: 0;
+        }
+        [class^="col-"]:nth-child(3), [class^="col-"]:nth-child(5) {
+            border-top: 0;
+            border-right: 1px solid $borde-oscuro;
+            border-bottom: 1px solid $borde-oscuro;
+            border-left: 1px solid $borde-oscuro;
+        }
+        [class^="col-"]:nth-child(4), [class^="col-"]:nth-child(6) {
+            border-top: 0;
+            border-right: 1px solid $borde-oscuro;
+            border-bottom: 1px solid $borde-oscuro;
+            border-left: 0;
+        }
+    }
+    [class^="col-"]:before {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        content:"";
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        z-index: 3;
+        opacity: 0;
+        @include transform(scale(.95));
+        @include transition(all 0.7s cubic-bezier(.58,.01,.69,.5) 0.1s);
+
+    }
+    [class^="col-"]:hover:before {
+        opacity: .8;
+        @include transform(scale(1));
+        @include transition(all 0.3s cubic-bezier(0,.5,.3,1));
+    }
+	.avierto-color1.current:after {
+		background: $color_avierto_1;
+		opacity: .4;
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		content: "";
+		width: 100%;
+		height: 100%;
+		transition: all 0.3s cubic-bezier(0, 0.5, 0.3, 1);
+	}
+	.avierto-color2.current:after {
+		background: $color_avierto_2;
+		opacity: .4;
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		content: "";
+		width: 100%;
+		height: 100%;
+		transition: all 0.3s cubic-bezier(0, 0.5, 0.3, 1);
+	}
+	.avierto-color3.current:after {
+		background: $color_avierto_3;
+		opacity: .4;
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		content: "";
+		width: 100%;
+		height: 100%;
+		transition: all 0.3s cubic-bezier(0, 0.5, 0.3, 1);
+	}
+	.avierto-color4.current:after {
+		background: $color_avierto_4;
+		opacity: .4;
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		content: "";
+		width: 100%;
+		height: 100%;
+		transition: all 0.3s cubic-bezier(0, 0.5, 0.3, 1);
+	}
+	.avierto-color5.current:after {
+		background: $color_avierto_5;
+		opacity: .4;
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		content: "";
+		width: 100%;
+		height: 100%;
+		transition: all 0.3s cubic-bezier(0, 0.5, 0.3, 1);
+	}
+	.avierto-color6.current:after {
+		background: $color_avierto_6;
+		opacity: .4;
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		content: "";
+		width: 100%;
+		height: 100%;
+		transition: all 0.3s cubic-bezier(0, 0.5, 0.3, 1);
+	}
+}
+
+.grid-container {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	text-align: center;
+	color: $gray_2;
+	z-index: 5;
+	&:before {
+		content: "";
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+}
+.box-content {
+	width: 90%;
+	display: inline-block;
+	vertical-align: middle;
+	a {
+		color: $white;
+	}
+	h1 {
+		font: 600 18px/1 $font_opensans, $font_sans;
+		cursor: pointer;
+		text-transform: uppercase;
+		letter-spacing: 6px;
+		@media screen and (max-width: $ipad-min-size - 1) {
+            font: 600 3vw/1 $font_opensans, $font_sans;
+            letter-spacing: 4px;
+        }
+	}
+}
+
+.avierto-color1:hover:before {
+	background: $color_avierto_1;
+}
+.avierto-color2:hover:before {
+	background: $color_avierto_2;
+}
+.avierto-color3:hover:before {
+	background: $color_avierto_3;
+}
+.avierto-color4:hover:before {
+	background: $color_avierto_4;
+}
+.avierto-color5:hover:before {
+	background: $color_avierto_5;
+}
+.avierto-color6:hover:before {
+	background: $color_avierto_6;
+}
+
+// Footer en Menu //
+
+.footer_menu {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background: $footer-color-light;
+    z-index: 1000;
+   	[class^="col-"] {
+        text-align: center;
+        height: 50px;
+    	padding: 8px 15px;
+    }
+    .container-fluid{
+    	.row{
+    		margin: 0 !important;
+    	}
+    }
+}
+.iconos-footer {
+    display: block;
+    width: auto;
+    max-height: 100%;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+
+/// TOP MENU ///
+%extend_1 {
+	left: 20px;
+	display: block;
+	width: 20px;
+	background-color: $white;
+}
+
+%extend_2 {
+	content: '';
+	position: absolute;
+	height: 2px;
+	overflow: hidden;
+	transform: top;
+	transition: all 0.2s ease 0.3s;
+}
+.open-overlay-menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1001;
+	background: transparent;
+	font: 700 12px/1 $font_opensans, $font_sans;
+	width: 100%;
+	transition: all 0.6s ease;
+	.logo-avierto {
+		position: relative;
+		float: left;
+		width: 190px;
+		margin-top: 17px;
+		margin-left: 15px;
+		@include transition(all .5s ease-in);
+	}
+	a {
+		color: $white;
+		text-transform: uppercase;
+		transition: all 0.6s ease;
+	}
+	nav {
+		float: right;
+		margin-top: 15px;
+		margin-right: 15px;
+		margin-bottom: 10px;
+		> div {
+			position: relative;
+			float: left;
+			margin-top: 23px;
+			transition: all 0.5s ease-in;
+			&:last-child {
+				margin-top: 0;
+				margin-left: 0;
+			}
+			+ div {
+				margin-left: 22px;
+			}
+		}
+	}
+}
+.menu-btn {
+	transition: all 0.6s ease;
+	.nav-open-menu {
+		cursor: pointer;
+		a {
+			display: block;
+			width: 60px;
+			height: 60px;
+			transition: opacity 0.25s ease-in-out;
+			span {
+				@extend %extend_1;
+				position: absolute;
+				top: 27px;
+				height: 0;
+				padding-top: 2px;
+				font-size: 0;
+				transition: opacity 0.2s ease 0.3s;
+			}
+			&:after {
+				@extend %extend_1;
+				@extend %extend_2;
+				top: 21px;
+			}
+			&:before {
+				@extend %extend_1;
+				@extend %extend_2;
+				top: 33px;
+			}
+		}
+	}
+}
+.menu-global-on-overlay {
+	background: transparent !important;
+	transition: all 0.7s ease-in;
+	.logo-avierto {
+		opacity: 0;
+		@include transition(all .7s ease-in);
+	}
+	nav div {
+		opacity: 0;
+		transition: all 0.7s ease-in;
+		&:last-child {
+			opacity: 1 !important;
+		}
+	}
+}
+.menu-btn-open .nav-open-menu a {
+	&:before {
+		top: 26px;
+		transform: rotate(45deg);
+	}
+	span {
+		opacity: 0;
+	}
+	&:after {
+		top: 26px;
+		transform: rotate(-45deg);
+	}
+}
+
+.back-transparent {
+    background: transparent !important;
+}
+
+
+@media screen and (max-width: $celular-max-size) {
+	.open-overlay-menu {
+        nav {
+            margin: 0;
+        }
+        .logo-avierto {
+            margin-top: 11px;
+        }
+    }
+}
+
+@media screen and (max-width: $celular-max-size - 80 ) {
+    .open-overlay-menu {
+        .logo-avierto {
+            width: 40%;
+        }
+    }
+}

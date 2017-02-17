@@ -1,0 +1,90 @@
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url("../images/media/poster.jpg") no-repeat;
+    background-size: cover; 
+}
+.index {
+    .container {
+        padding: 0;
+    }   
+    .home_content {
+        cursor: pointer;
+        position:absolute;
+        top: 47.5%;
+        left: 50%;
+        z-index: 1;
+        width: 95%;
+        @include transform (translate3d(-50%, -50%, 0px));
+        img, .frase-home {
+            margin: 0 auto;
+        }
+        .frase-home {
+            color: $white; 
+            font-family: $font_calibri, $font_sans;
+            font-weight: 500; 
+            font-size: 22px; 
+            text-align: center; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+        }
+    }
+}
+.homemov{
+    display: none;
+}
+
+@media screen and (min-device-width : $celular-min-size) and (max-device-width : $ipad-max-size){
+    .container-fluid{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    video#bgvid{
+        display: none;
+    }
+    .homemov{
+        display: block;
+    }
+    .home_content {
+       .frase-home {
+            font-weight: 300 !important; 
+            font-size: 16px !important;  
+       } 
+    } 
+}
+
+// #copy-home {
+//     position: absolute;
+//     top: 50.7vh;
+//     left: 0;
+//     right: 0;
+//     margin: 0 auto;
+//     z-index: 9;
+//     color: $white;
+//     font-family: $font_calibri, $font_sans;
+//     font-weight: 500;
+//     font-size: 22px;
+//     text-align: center;
+//     text-transform: uppercase;
+//     letter-spacing: 2px;
+// }
+
+// #logo-home {
+//   position: absolute;
+//   width: 380px;
+//   height: 88px;
+//   background: url("../images/logo_avierto.png") no-repeat center center;
+//   z-index: 9;
+//   top: 39.7vh;
+//   left: 0;
+//   right: 0;
+//   margin: 0 auto;
+// }

@@ -1,0 +1,272 @@
+// SOMOS //
+.sections.sec-quienes {
+  .top-fixed-content {
+    background: white;
+  }
+  .menu-button::before {
+    background: -webkit-linear-gradient(#000 10%, transparent 10%, transparent 45%, #000 45%, #000 55%, transparent 55%, transparent 90%, #000 90%);
+    background: linear-gradient(#000 10%, transparent 10%, transparent 45%, #000 45%, #000 55%, transparent 55%, transparent 90%, #000 90%);
+  }
+  .cortina {
+    background: url(../images/somos/img-1.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+.content-quienes {
+  padding: 0;
+  margin: 0;
+}
+.somos .col-xs-10{
+  padding: 0 !important;
+}
+
+.bg-cancha-1 {
+  background: url(../images/somos/img-2.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.bg-cancha-2 {
+  background: url(../images/somos/img-3.jpg) no-repeat center center;
+  background-size: cover;
+  .horarios-fut{
+    &:before{
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+  
+}
+
+.bg-escalera {
+  background: url(../images/somos/img-escalera.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.bg-vestidores {
+  background: url(../images/somos/img-vestidores.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.bg-pasillo {
+  background: url(../images/somos/img-pasillo.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.bg-ninas {
+  background: url(../images/somos/img-ninas.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.bg-krav {
+  background: url(../images/somos/img-krav.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.bg-reja {
+  background: url(../images/somos/img-reja.jpg) no-repeat center center;
+  background-size: cover;
+}
+.bg-rest-1 {
+  background: url(../images/somos/img-rest-1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.bg-rest-2 {
+  background: url(../images/somos/img-rest-2.jpg) no-repeat center center;
+  background-size: cover;
+}
+.bg-renta {
+  background: url(../images/somos/img-renta.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.bg-estacionamiento {
+  background: url(../images/somos/img-estacionamiento.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.bg-fachada {
+  background: url(../images/somos/img-fachada.jpg) no-repeat center center;
+  background-size: cover;
+}
+.somos-carousel {
+  min-height: 480px;
+  max-height: 960px;
+  overflow: hidden;
+  .carousel-control {
+    text-shadow: none;
+    opacity: 1;
+    text-align: inherit;
+    span {
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+      display: inline-block;
+    }
+    &:hover, &:focus {
+      opacity: 1;
+    }
+    &.left span {
+      left: 20px;
+      margin-top: -63px;
+    }
+    &.right span {
+      right: 20px;
+      margin-top: -63px;
+    }
+    &.left, &.right {
+      background: transparent;
+    }
+  }
+  .carousel-inner > .item > {
+    img, a > img {
+      width: 100%;
+      margin: auto;
+    }
+  }
+}
+
+// MENU //
+.somos .overlay-menu-fixed{
+	background: rgba(37, 151, 119, 0.8);
+	position: fixed; 
+}
+
+
+.texto-somos {
+  font: 400 29px/1 $font_festivo;
+  color: white;
+}
+
+.texto-flotante {
+  font: 400 29px/1 $font_festivo;
+  color: white;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 45%;
+}
+
+.texto-somosyparrafo {
+  color: white;
+  max-width: 760px;
+  margin: 0 auto;
+  h3 {
+    font: 400 29px/1 $font_festivo;
+    margin: 0 auto 10px;
+  }
+  p {
+    font: 400 18px/1 "calibriregular", $font_calibri, $font_sans;
+  }
+  b {
+    font-size: 22px;
+  }
+  a {
+    color: inherit;
+    font-size: 20px;
+    font-family: 'calibriitalic';
+  }
+}
+
+.ghost_btn {
+  color: white;
+  background-color: transparent;
+  padding: 13px 18px;
+  font-size: 16px;
+  line-height: 1;
+  display: block;
+  margin: 35px auto 0;
+  border: 2px solid white;
+  border-radius: 0;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transform: all 0.25s;
+  transition: all 0.25s;
+  a {
+    color: inherit;
+  }
+  &:hover {
+    color: #4bae90;
+    background-color: white;
+    border: 2px solid white;
+  }
+}
+
+.texto-in-list {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  text-align: right;
+  color: white;
+  z-index: 1;
+  h2 {
+    position: relative;
+    font: 400 29px/1 $font_festivo;
+    margin: 0;
+    padding: 0 0 10px;
+    &:after {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 60px;
+      height: 2px;
+      background: white;
+      content: '';
+    }
+  }
+  ul {
+    font: 400 18px/1 "calibriregular", $font_calibri, $font_sans;
+    padding: 12px 0;
+    list-style: none;
+  }
+  li a {
+    color: inherit;
+    font-size: 20px;
+    font-family: 'calibriitalic';
+  }
+}
+
+.bg-salon {
+  @include bg-image(url(../images/somos/img-salon.jpg));
+}
+
+@media screen and (max-width: $ipad-min-size) {
+  .somos-carousel {
+        min-height:380px;
+        .carousel-control {
+            span {
+                top: 25%;
+            }
+        }
+        .carousel-inner {
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            @include transform(translate3d(-50%, -50%, 0px));
+            width: 200%;
+        }
+    }
+}
+
+// @media screen and (min-width: $celular-max-size +1 ) and (max-width: $ipad-min-size) {
+//     .somos-carousel {
+//       min-height:380px;
+//       .carousel-control {
+//         span {
+//             top: 25%;
+//         }
+//       }
+//       .carousel-inner {
+//           position: absolute;
+//           overflow: hidden;
+//           top: 50%;
+//           left: 50%;
+//           @include transform(translate3d(-50%, -50%, 0px));
+//           width: 200%;
+//       }
+//     }
+// }

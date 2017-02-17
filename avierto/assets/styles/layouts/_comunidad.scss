@@ -1,0 +1,150 @@
+.comunidad main{
+  background: #fff;
+}
+.comunidad .overlay-menu-fixed, #seccion-promociones .overlay-menu-fixed {
+  background: rgba(111, 183, 159, 0.8);
+  position: fixed;
+}
+
+.sections.sec-comunidad {
+  .top-fixed-content {
+    background: rgba(112, 189, 163, 0.8);
+  }
+  .menu-button::before {
+    background: -webkit-linear-gradient(#fff 10%, transparent 10%, transparent 45%, #fff 45%, #fff 55%, transparent 55%, transparent 90%, #fff 90%);
+    background: linear-gradient(#fff 10%, transparent 10%, transparent 45%, #fff 45%, #fff 55%, transparent 55%, transparent 90%, #fff 90%);
+  }
+  .cortina {
+    background: url(../images/avierto-comunidad.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.anio-nota {
+  background: #fff;
+  margin-top: 60px;
+  margin-bottom: 25px;
+  text-align: center;
+  h1 {
+    font: 400 64px/1 $font_festivo;
+    margin: 0;
+    color: #4bae90;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 69px;
+      height: 6px;
+      background: url(../images/line-grid.png) no-repeat center center;
+    }
+  }
+}
+
+.sec-notas-avierto {
+  color: #4bae90;
+}
+
+.nota-avierto {
+  position: relative;
+  padding: 50px 0;
+  background: #fff;
+  overflow: hidden;
+  .back-img-nota {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    @include transform (translate(-50%, -50%));
+    img {
+      display: block;
+      min-width: 100vw;
+      min-height: 100%;
+    }
+  }
+  
+  .day-nota {
+    text-align: center;
+    font: 400 48px/0.85 $font_festivo;
+    span {
+      font-size: 230px;
+    }
+  }
+  .title-nota {
+    margin-top: -5px;
+    h2 {
+      font: 400 62px/1 $font_festivo;
+      margin: 0;
+    }
+  }
+  .content-nota {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .social-nota {
+    width: 24px;
+    height: 24px;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+    .social-icon {
+      fill: #4bae90;
+    }
+    + .social-nota {
+      margin-left: -14px;
+    }
+  }
+}
+
+.nota-with-image {
+  color: #ffd800;
+  .title-nota h2, .content-nota {
+    color: white;
+  }
+  .social-nota .social-icon {
+    fill: #ffd800;
+  }
+}
+.texto-align-comunidad {
+  font: 400 40px/1 $font_festivo;
+  color: #4bae90;
+  p {
+    font: 400 18px/1 "calibriregular", "Calibri", sans-serif;
+    margin-top: 20px;
+  }
+  span {
+    color: inherit;
+    font-size: 20px;
+    font-family: 'calibriitalic';
+  }
+}
+
+@media screen and (max-width: $celular-max-size) {
+  .texto-align-comunidad {
+      margin: 25px 0;
+  }
+  .nota-avierto {
+      .title-nota {
+          h2 {
+              font: 400 11.66vw/1 $font_festivo;
+          }
+      }
+      .social-nota + .social-nota {
+          margin-left: 0;
+      }
+  }
+}
+
+@media screen and (max-width: $ipad-min-size - 1) {
+  .nota-avierto {
+    background: $color_avierto_1;
+    .back-img-nota {
+      display: none;
+    }
+  }
+}

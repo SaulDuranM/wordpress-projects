@@ -1,0 +1,95 @@
+footer {
+	position: fixed;
+	bottom: 0;
+	z-index: -99;
+	opacity: 0;
+}
+.color-contacto-2 {
+  color: $green_contacto;
+  background: $back_contacto;
+}
+.color-contacto-2 [class^="col-"] .footer-list a {
+  color: $green_contacto;
+}
+.color-contacto-2 .footer-info a {
+  color: $green_contacto;
+}
+
+.footer {
+	text-align: center;
+	font-size: 16px;
+}
+.footer-logo {
+	margin: 25px auto 35px;
+}
+.footer-list {
+	display: inline-block;
+	font-family: $font_festivo;
+	margin: 0 15px 25px;
+	a {
+		color: $white;
+	}
+}
+.footer-s {
+	height: 27px;
+	margin-right: 10px;
+	margin-bottom: 25px;
+}
+.footer-info {
+	font-family: $font_calibri, $font_sans;
+	font-size: 16px;
+	margin-bottom: 20px;
+	tab-size: 7;
+	a {
+		color: $white;
+	}
+}
+.footer-info-fotos {
+	font-family: $font_calibri, $font_sans;
+	font-size: 12px;
+	margin-bottom: 10px;
+	tab-size: 7;
+	text-transform: uppercase;
+	font-weight:700;
+	a {
+		color: $white;
+	}
+}
+.copyright {
+	font-family: $font_festivo;
+	font-size: 11px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px;
+	a {
+		color: $white;
+	}
+}
+.color-contacto-1 {
+  color: white;
+  background: $green_contacto;
+}
+.color-contacto-1 a {
+  color: white !important;
+}
+
+@media screen and (max-width: $iphone-max-size) {
+	.footer {
+		margin: 0;
+	}
+	.footer-logo {
+   		margin: 15px auto 20px;
+	}
+	.footer-info {
+		margin-bottom: 15px;
+	}
+	.footer-s {
+		margin-bottom: 15px
+	}
+	.footer-list {
+		margin: 0 15px 15px;
+	}
+}
+
+
+

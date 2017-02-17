@@ -1,0 +1,95 @@
+/// Politica ///
+.politica-de-privacidad {
+  .open-overlay-menu {
+    background: rgba(74, 167, 139, 0.8);
+    position: fixed;
+  }
+  .grid-loader-container {
+    top: 0;  
+  }
+}
+.sec_politica {
+  margin-top: 150px;
+  .container {
+    padding-bottom: 30px;
+    [class^="col-"] {
+      h1 {
+        text-align: center;
+        margin: 0 0 20px;
+        font-weight: 600;
+        color:$color_avierto_1;
+      }
+      a {
+        color:$color_avierto_1;
+      }
+      h2 {
+        margin:30px 0 10px;
+        font-size: 18px;
+      }
+      ul {
+        list-style: disc;
+        -webkit-margin-before: 10px;
+        -webkit-margin-after: 10px;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-start: 30px;
+      }
+      ol.roman {
+        list-style-type: upper-roman;
+      }
+    }
+  }
+  @media screen and (max-width: $celular-max-size) {
+    .container {
+      padding: 0;
+    }
+  }
+}
+
+
+/// Teminos ///
+.terminos-y-condiciones {
+  .open-overlay-menu {
+    background: rgba(74, 167, 139, 0.8);
+    position: fixed;
+  }
+  .grid-loader-container {
+    top: 0;  
+  }
+}
+
+.sec_terminos {
+  margin-top: 150px;
+  .container {
+    padding-bottom: 30px;
+    [class^="col-"] {
+      h1 {
+        text-align: center;
+        margin: 0 0 20px;
+        font-weight: 600;
+        color:$color_avierto_1;
+      }
+      a {
+        color:$color_avierto_1;
+      }
+      h2 {
+        margin:30px 0 10px;
+        font-size: 18px;
+      }
+      ul {
+        list-style: disc;
+        -webkit-margin-before: 10px;
+        -webkit-margin-after: 10px;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-start: 30px;
+      }
+      ol.roman {
+        list-style-type: upper-roman;
+      }
+      ol.alpha {
+        list-style-type: lower-alpha;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+body {
+    font-family: $font_book, sans-serif;
+    letter-spacing: .3px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background-color: $white;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+	&:hover{
+		text-decoration: none;
+		color: inherit;
+	}
+	&:visited{
+		text-decoration: none;
+		//color: inherit;
+	}
+	&:focus{
+		text-decoration: none;
+	}
+	&:active{
+		text-decoration: none;
+	}
+}
+.hidden{
+	display: none;
+}

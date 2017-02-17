@@ -1,0 +1,55 @@
+// Mixins
+@mixin transition($all-ease) {
+    -webkit-transition: $all-ease;
+       -moz-transition: $all-ease;
+         -ms-transform: $all-ease;
+            transition: $all-ease;
+}
+@mixin transform ($all-property) {
+    -webkit-transform: $all-property;
+       -moz-transform: $all-property;
+        -ms-transform: $all-property;
+         -o-transform: $all-property;
+            transform: $all-property;
+}
+@mixin bg-image($url-image) {
+    background: $url-image no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+// @include bg-image(url(../../...jpg));
+@mixin bg-image-fixed($url-image) {
+    background: $url-image no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed, scroll;
+}
+// @include bg-image-fixed(url(../../...jpg));
+@mixin calc($property, $expression) { 
+  #{$property}: -webkit-calc(#{$expression}); 
+  #{$property}: calc(#{$expression}); 
+} 
+@mixin marg-pad($el-margen, $el-padding) {
+    margin:$el-margen;
+    padding:$el-padding;
+}
+@mixin box-shadow ($shadow) {
+    -webkit-box-shadow: $shadow;
+       -moz-box-shadow: $shadow;
+            box-shadow: $shadow;
+}
+@mixin radius ($radiusval) {
+    -webkit-border-radius: $radiusval; 
+       -moz-border-radius: $radiusval; 
+            border-radius: $radiusval;
+}
+@mixin animation ($animationval){
+    -webkit-animation: $animationval;
+       -moz-animation: $animationval;
+            animation: $animationval;
+}
+.no-padding {padding:0;}
+.no-margin {margin:0;}

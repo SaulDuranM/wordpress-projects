@@ -1,0 +1,149 @@
+/// FONTS ///
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+@font-face {
+    font-family: 'calibriregular';
+    src: url('../fonts/calibri-webfont.eot');
+    src: url('../fonts/calibri-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/calibri-webfont.woff2') format('woff2'),
+         url('../fonts/calibri-webfont.woff') format('woff'),
+         url('../fonts/calibri-webfont.ttf') format('truetype'),
+         url('../fonts/calibri-webfont.svg#calibriregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'calibriitalic';
+    src: url('../fonts/calibri-italic-webfont.eot');
+    src: url('../fonts/calibri-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/calibri-italic-webfont.woff2') format('woff2'),
+         url('../fonts/calibri-italic-webfont.woff') format('woff'),
+         url('../fonts/calibri-italic-webfont.ttf') format('truetype'),
+         url('../fonts/calibri-italic-webfont.svg#calibriitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'calibribold_italic';
+    src: url('../fonts/calibri-bolditalic-webfont.eot');
+    src: url('../fonts/calibri-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/calibri-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/calibri-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/calibri-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/calibri-bolditalic-webfont.svg#calibribold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'calibribold';
+    src: url('../fonts/calibri-bold-webfont.eot');
+    src: url('../fonts/calibri-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/calibri-bold-webfont.woff2') format('woff2'),
+         url('../fonts/calibri-bold-webfont.woff') format('woff'),
+         url('../fonts/calibri-bold-webfont.ttf') format('truetype'),
+         url('../fonts/calibri-bold-webfont.svg#calibribold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'FestivoLettersNo1';
+  src: url("../fonts/2F5831_0_0.eot");
+  src: url("../fonts/2F5831_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2F5831_0_0.woff2") format("woff2"), url("../fonts/2F5831_0_0.woff") format("woff"), url("../fonts/2F5831_0_0.ttf") format("truetype");
+}
+$font_calibri: Calibri;
+$font_sans: sans-serif;
+$font_festivo: FestivoLettersNo1;
+$font_opensans: "Open Sans";
+
+.FestivoLettersNo1 {
+  font-family: $font_festivo;
+  font-weight: normal;
+  font-style: normal;
+}
+// Glyphicons font path
+$icon-font-path:        "../fonts/";
+
+/// COLORS ///
+
+$white: #fff;
+$black_75: rgba(0, 0, 0, 0.75);
+$black_50: rgba(0, 0, 0, 0.50);
+$gray_1: #464646;
+$gray_2: #e5e5e5;
+
+$borde-oscuro: #464646;
+$footer-color-light: #fbfaf5;
+
+$color_avierto_1: #009069;
+$color_avierto_2: #269f7d;
+$color_avierto_3: #4bae90;
+$color_avierto_4: #70bda3;
+$color_avierto_5: #8dc8b2;
+$color_avierto_6: #a5d1be;
+
+$color_avierto_1_st: #008863;
+$color_avierto_2_st: #259777;
+$color_avierto_3_st: #4aa78b;
+$color_avierto_4_st: #6fb79f;
+$color_avierto_5_st: #89c3ad;
+$color_avierto_6_st: #a2ccba;
+
+.color_footer_1{
+    background: $color_avierto_1;
+    color: $white;
+}
+.color_footer_1_st{
+    background: $color_avierto_1_st;
+    color: $white;
+}
+.color_footer_2{
+    background: $color_avierto_2;
+    color: $white;
+}
+.color_footer_2_st{
+    background: $color_avierto_2_st;
+    color: $white;
+}
+.color_footer_3{
+    background: $color_avierto_3;
+    color: $white;
+}
+.color_footer_3_st{
+    background: $color_avierto_3_st;
+    color: $white;
+}
+.color_footer_4{
+    background: $color_avierto_4;
+    color: $white;
+}
+.color_footer_4_st{
+    background: $color_avierto_4_st;
+    color: $white;
+}
+.color_footer_5{
+    background: $color_avierto_5;
+    color: $white;
+}
+.color_footer_5_st{
+    background: $color_avierto_5_st;
+    color: $white;
+}
+.color_footer_6{
+    background: $color_avierto_6;
+    color: $white;
+}
+.color_footer_6_st{
+    background: $color_avierto_6_st;
+    color: $white;
+}
+
+$green_contacto: #269f7d;
+$back_contacto : #fbfaf5;
+
+
+
+

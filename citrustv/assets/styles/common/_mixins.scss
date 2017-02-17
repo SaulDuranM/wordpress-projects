@@ -1,0 +1,14 @@
+// Mixins
+@mixin transition($all-ease) {
+    -webkit-transition: $all-ease;
+       -moz-transition: $all-ease;
+         -ms-transform: $all-ease;
+            transition: $all-ease;
+}
+@mixin transform ($all-property) {
+    -webkit-transform: $all-property;
+       -moz-transform: $all-property;
+        -ms-transform: $all-property;
+         -o-transform: $all-property;
+            transform: $all-property;
+}

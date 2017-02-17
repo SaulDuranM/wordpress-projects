@@ -1,0 +1,37 @@
+var regionpolygone ={
+"Russia":{
+title: 'Russia / CIS',
+center: [62.364501, 73.426631],
+region: ["AM", "AZ", "BY", "KZ", "KG", "MD", "RU", "TJ", "UZ", "TM", "UA"]
+},
+"Asia":{
+title: 'Asia',
+center: [35.415213, 79.578976],
+region: ["AU", "BN", "BD", "KH", "CN", "IN", "PK", "ID", "JP", "KP", "KR", "LA", "MY", "MN", "MM", "NZ", "PG", "PH", "TW", "TH", "VN"]
+},
+"Europe":{
+title: 'Europe',
+center: [49.231385, 18.407099],
+region: ["UA", "FR", "ES", "SE", "DE", "FI", "NO", "PL", "IT", "GB", "RO", "BY", "GR", "BG", "IS","HU", "PT", "RS", "AZ", "AT", "CZ", "IE", "GE", "LT", "LV", "HR", "BA", "SK", "EE", "DK", "NL", "CH", "MD", "BE", "AM", "AL", "MK", "TR", "SI", "ME", "CY", "LU"]
+},
+"Africa":{
+title: 'Africa',
+center: [17.423206, 14.012568],
+region: ["DZ", "AO", "BJ", "BW", "BF", "BI", "CM", "CF", "TD", "CD", "DJ", "EG", "GQ", "ER", "ET", "GA", "GM", "GH", "GN", "GNB", "KE", "LS", "LR", "LY", "MG", "MW", "ML", "MR", "MA", "MZ", "NA", "NE", "NG", "CG", "RW", "SN", "SL", "SO", "ZA", "SD", "SZ", "TZ", "TG", "TN", "UG", "ZM","ZW","-99"]
+},
+"Australia":{
+title: 'Australia',
+center: [-21.913270, 131.346556],
+region: ["AU"]
+},
+"SAmerica":{
+title: 'South America',
+center: [-9.757773, -64.377861],
+region: ["AR", "BO", "BR", "CL", "CO", "CR", "CU", "DO", "EC", "SV", "GT", "HT", "HN", "MX", "NI", "PA", "PY", "PE", "UY", "VE"]
+},
+"NAmerica":{
+title: 'North America',
+center: [52.702221, -102.385378],
+region: ["BS", "BZ", "CA", "CR", "CU", "DO", 'SV', "GT", "HT", "HN", "JM", "MX", "NI", "PA", "TT", "US"]
+},
+}

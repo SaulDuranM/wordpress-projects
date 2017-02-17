@@ -1,0 +1,177 @@
+footer{
+	position: relative;
+	padding-bottom: 17.3em;
+	margin-top: 5em;
+    background: $orange url(../images/common/_footer_bg.png) no-repeat center bottom;
+
+    .footer-join{
+    	position: relative;
+    	padding: 2em 0;
+    	margin: 10em 0;
+    	.footer-join-title{
+    		display: inline-block;
+    		float: left;
+    		font: 60px $font_demi;
+    		color: $darkorange;
+    	}
+    	.footer-join-cta{
+    		float: right;
+    		padding: 1.2em 0;
+    		.footer-join-cta-a{
+    			position: relative;
+    			border-radius: 5px;
+    			padding: 15px 20px 10px 20px;
+    			background-color: $white;
+    			font: 15px $font_book;
+    			color: $orange;
+    			text-transform: uppercase;
+    		}
+    	}
+    }
+    .footer-nav{
+    	color: $white;
+    	font: 16px $font_book;
+    	.footer-copy{
+    		line-height: 25px;
+    	}
+    	.footer-nav-title{
+    		font: 20px $font_demi;
+    		color: $darkorange;
+    		text-transform: uppercase;
+    		margin-bottom: 10px;
+    	}
+    	.footer-nav-dep{
+    		.menu{
+    			margin: 0;
+    			padding: 0;
+    			li{
+    				list-style: none;
+    				padding: 4px 0;
+    				a{
+    					font: 16px $font_book;
+    					color: $white;
+    					text-decoration: none;
+    					cursor: pointer;
+    				}
+    				
+    			}
+    		}
+    	}
+    	.social {
+    		position: relative;
+			a{
+				border: none !important;
+				display: block;
+				float: left;
+				width: 34px;
+				height: 34px;
+
+				@include transition(all 0.5s ease);
+			}
+			.social-tt{
+				background: url(../images/common/_social_icons_footer.png) 0px top;
+				&:hover{
+					background: url(../images/common/_social_icons_footer.png) 0px bottom;	
+				}
+			}
+			.social-fb{
+				background: url(../images/common/_social_icons_footer.png) 68px top;
+				&:hover{
+					background: url(../images/common/_social_icons_footer.png) 68px bottom;	
+				}
+			}
+			.social-yt{
+				background: url(../images/common/_social_icons_footer.png) 34px top;
+				&:hover{
+					background: url(../images/common/_social_icons_footer.png) 34px bottom;	
+				}
+			}
+			
+		}
+
+
+
+
+    }
+    .footer-copyright{
+    	position: absolute;
+    	bottom: 2em;
+    	padding: 1em 0;
+    	font: 14px $font_book;
+    	color: $darkorange;
+        a{
+            color: $darkorange;
+            text-decoration: none;
+            &:hover{
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.intro {
+    display: none
+}
+
+.bdgLogo{
+    margin-top: 1em;
+    background: url(../images/bdg_logo.png) no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 35px;
+    position: relative;
+    text-indent: -9999px;
+    width: 150px;
+    @include transition(all 0.5s ease);
+
+    &:hover{
+        background-position: 0px -35px;
+    } 
+}
+
+
+@media screen and (max-width: 480px) {
+    .footer-join{
+        margin: 2em 0 !important;
+        .footer-join-title{
+            font: 35px $font_demi !important;
+            margin-bottom: 1em;
+        }
+        .footer-join-cta{
+            position: relative !important;
+            float: none !important;
+            padding: 0 !important;
+        }
+    }
+    .footer-nav-menu{
+        display: none;   
+    }   
+    .footer-copy{
+        display: none;
+    }
+    .footer-copyright{
+        bottom: 7em !important;
+        padding: 1em 6em 0 0 !important;
+    }
+}
+@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+    footer{
+         .footer-join{
+            margin: 5em 0 0 0;
+            .footer-join-cta{
+                float: none;
+                position: relative;
+                margin: 2em 0;
+            }
+            .footer-join-title{
+                float: none;
+            }
+        }
+
+    }
+    .footer-copy{
+        margin: 3em 0;
+    }
+}
+
+

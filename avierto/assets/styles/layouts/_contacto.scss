@@ -1,0 +1,292 @@
+.contacto .overlay-menu-fixed {
+  background: rgba(37, 151, 119, 0.8);
+  position: fixed;
+}
+.sections.sec-contacto .cortina {
+  background: url(../images/avierto-contacto.jpg) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.contacto-content {
+  margin: 0;
+  padding: 0;
+  background: #fbfaf5;
+  [class^="col-"] {
+    margin: 0;
+    padding: 0;
+    height: 630px;
+    overflow: hidden;
+  }
+  .title-general-info {
+    color: #269f7d;
+    text-align: center;
+  }
+  .llamanos-container {
+    font-family: "calibriregular", $font_calibri, $font_sans;
+    text-align: center;
+    .contacto-1 {
+      font-size: 22px;
+      color: #269f7d;
+      padding-top: 19%;
+    }
+    .media-logos ul li {
+      display: inline-block;
+      margin-right: 12px;
+      img {
+        padding-top: 12px;
+        width: 33px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .escribenos-container .form-container {
+    height: 100%;
+  }
+}
+
+.contacto-container {
+  height: calc(100% - 80px);
+  overflow: scroll;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  [class^="col-"] {
+    min-height: 280px;
+    &:first-child {
+      height: 33.33vh;
+      text-align: center;
+      &:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+      > div {
+        width: 80%;
+        display: inline-block;
+        vertical-align: middle;
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.info-contacto {
+  font-family: $font_festivo;
+  > [class^="col-"] {
+    text-align: center;
+    color: white;
+    + [class^="col-"] {
+      margin-bottom: 60px;
+    }
+  }
+  .contacto-1 {
+    font-size: 32px;
+    font-family: $font_festivo;
+  }
+  .media-logos ul li {
+    display: inline-block;
+    margin-right: 12px;
+    img {
+      padding-top: 12px;
+      width: 27px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.mapa-contacto {
+  background: #fbfaf5;
+  overflow: hidden;
+  > div {
+    overflow: hidden;
+  }
+  #map {
+    overflow: hidden;
+    width: 90%;
+    height: 344px;
+    margin: 15% auto 0;
+  }
+}
+
+#content-mapa {
+  color: #27a66b;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #fff;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+#feedback-page {
+  text-align: center;
+}
+
+#form-main {
+  width: 100%;
+  font-family: $font_festivo;
+}
+
+#form-div {
+  background: rgba(255, 255, 255, 0);
+  margin: 0 20px;
+}
+
+.feedback-input {
+  color: #fff;
+  font-family: $font_festivo;
+  font-weight: 300;
+  font-size: 14px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #92cfbe;
+  padding: 7px 13px 7px 13px;
+  margin-bottom: 0px;
+  width: 100%;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0px solid transparent;
+  /* border-bottom: 1px solid #000; */
+  &:focus {
+    background: #269f7d;
+    box-shadow: 0;
+    color: #000;
+    outline: none;
+    padding: 7px 13px 7px 13px;
+  }
+}
+
+.focused {
+  color: #000;
+  border: #30aed6 solid 2px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+#button-blue {
+  font-family: $font_festivo;
+  float: left;
+  width: 100%;
+  border: 0px solid transparent;
+  cursor: pointer;
+  background-color: #269f7d;
+  color: white;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transform: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 300;
+  &:hover {
+    background-color: #269f7d;
+  }
+}
+
+.ease {
+  width: 0px;
+  height: 46px;
+  background-color: #269f7d;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transform: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.submit:hover .ease {
+  width: 100%;
+  background-color: #269f7d;
+}
+
+// @media only screen and (max-width: 580px) {
+//   #form-div {
+//     left: 3%;
+//     margin-right: 3%;
+//     width: 88%;
+//     margin-left: 0;
+//     padding-left: 3%;
+//     padding-right: 3%;
+//   }
+// }
+
+.info-3-1 {
+  font-size: 29px;
+  font-family: $font_festivo;
+  line-height: 1;
+}
+.title-general-info {
+  margin: 90px auto;
+}
+.title-general-info * {
+  display: block;
+}
+.title-general-info img {
+  margin: 0 auto;
+}
+@media screen and (max-width: $celular-max-size) {
+  .contacto-content {
+    .llamanos-container {
+        .contacto-1 {
+            padding-top: 0 !important;
+        }
+    }
+  }
+  .mapa-contacto #map {
+    margin: 0 auto 0 !important;
+  }
+}
+
+@media screen and (max-width: $ipad-min-size) {
+  .contacto-content {
+    [class^="col-"] {
+        height: auto;
+    }
+    .llamanos-container {
+        .contacto-1 {
+            padding-top: 20px;
+        }
+    }
+  }
+  .mapa-contacto #map {
+    margin: 20px auto 0;
+  }
+}
+
+@media screen and (max-width: $ipad-max-size) {
+  .title-general-info {
+    margin: 0;
+    padding: 50px 0;
+  }
+}

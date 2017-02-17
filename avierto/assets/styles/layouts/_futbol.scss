@@ -1,0 +1,577 @@
+.futbol {
+  .overlay-menu-fixed {
+    background: rgba(0, 136, 99, 0.8);
+    position: fixed;
+  }
+}
+.sections.sec-futbol .row{
+	padding: 0;
+	margin: 0;
+}
+.futbol .title-general-info {
+  margin: 90px auto 50px auto;
+}
+.futbol .info-4 {
+  padding: 0 35px;
+}
+
+
+
+.sections.sec-futbol {
+  .top-fixed-content {
+    background: rgba(39, 166, 107, 0.8);
+  }
+  .menu-button::before {
+    background: -webkit-linear-gradient(#ffffff 10%, transparent 10%, transparent 45%, #fff 45%, #fff 55%, transparent 55%, transparent 90%, #fff 90%);
+    background: linear-gradient(#ffffff 10%, transparent 10%, transparent 45%, #fff 45%, #fff 55%, transparent 55%, transparent 90%, #fff 90%);
+  }
+  .cortina {
+    background: url(../images/avierto-futbol.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+.cortina-int {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.cortina-int .top-fixed-content {
+  background: transparent !important;
+}
+.scroll-futbol {
+  top: 85vh;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+.bajar-futbol {
+  top: 87vh;
+}
+.content-futbol{
+	padding: 0;
+	margin: 0;
+}
+.title-section {
+  margin: 0;
+  height: 80px;
+  line-height: 2;
+  font-family: $font_festivo;
+  font-size: 40px;
+  overflow: hidden;
+}
+.title-section .col-xs-12 {
+  line-height: 2;
+  text-align: center;
+}
+.color-fut {
+  color: white;
+  background: #27a66b;
+}
+
+.color-fut-1 {
+  color: white;
+  background: #5ccb7e;
+}
+
+.color-fut-2 {
+  color: #27a66b;
+  background: #e0e0e0;
+}
+
+.color-fut-3 {
+  color: white;
+  background: #228354;
+}
+
+///////
+ul[class^='futbol-tabs-'] > li.active > a::after, ul[class*='futbol-tabs-'] > li.active > a::after {
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 45px;
+  height: 6px;
+  background: url(../images/line.png) no-repeat center center;
+}
+ul[class^='futbol-tabs-'] > li.active > a::before, ul[class*='futbol-tabs-'] > li.active > a::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  background: url(../images/download.png) no-repeat center center;
+}
+.futbol-tabs-1 {
+  background: #75e497;
+  font-family: $font_festivo;
+  font-size: 18px;
+  > li {
+    width: 25vw;
+    text-align: center;
+    > a {
+      background: #75e497;
+      border: 0;
+      border-radius: 0;
+      margin: 0;
+      color: white;
+    }
+    &.active > a {
+      border: 0;
+      background: #5ccb7e;
+      border-radius: 0;
+      margin: 0;
+      color: white;
+      &:hover, &:focus {
+        border: 0;
+        background: #5ccb7e;
+        border-radius: 0;
+        margin: 0;
+        color: white;
+      }
+    }
+    > a:hover {
+      background: #5ccb7e;
+    }
+  }
+}
+
+.futbol-tabs-2 {
+  background: #75e497;
+  font-family: $font_festivo;
+  font-size: 18px;
+  > li {
+    width: 100vw;
+    text-align: center;
+    > a {
+      background: #f7f7f7;
+      border: 0;
+      border-radius: 0;
+      margin: 0;
+      color: #27a66b;
+    }
+    &.active > a {
+      border: 0;
+      background: #e0e0e0;
+      border-radius: 0;
+      margin: 0;
+      color: #27a66b;
+      &:hover, &:focus {
+        border: 0;
+        background: #e0e0e0;
+        border-radius: 0;
+        margin: 0;
+        color: #27a66b;
+      }
+    }
+    > a:hover {
+      background: #5ccb7e;
+    }
+  }
+}
+
+.futbol-tabs-3 {
+  background: #228354;
+  font-family: $font_festivo;
+  font-size: 18px;
+  > li {
+    width: 50vw;
+    text-align: center;
+    > a {
+      background: #27a66b;
+      border: 0;
+      border-radius: 0;
+      margin: 0;
+      color: white;
+    }
+    &.active > a {
+      border: 0;
+      background: #228354;
+      border-radius: 0;
+      margin: 0;
+      color: white;
+      &:hover, &:focus {
+        border: 0;
+        background: #228354;
+        border-radius: 0;
+        margin: 0;
+        color: white;
+      }
+    }
+    > a:hover {
+      background: #27a66b;
+    }
+  }
+}
+
+.jornada, .jornada-2 {
+  padding: 4px !important;
+  margin: 10px 0 27px !important;
+}
+
+.jornada [class^="col-"], .jornada-2 [class^="col-"] {
+  padding: 0;
+  text-align: center;
+}
+
+.jornada [class^="col-"]:first-child, .jornada-2 [class^="col-"]:first-child {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.jornada [class^="col-"]:last-child, .jornada-2 [class^="col-"]:last-child {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.jornada {
+  background: #5ccb7e;
+}
+
+.jornada-2 {
+  background: #27a66b;
+}
+
+.txt-tabla {
+  font-family: "calibriregular", $font_calibri, $font_sans;
+  font-size: 14px;
+}
+
+.var-resultados tr {
+  th:last-child {
+    text-align: right;
+  }
+  td {
+    &:last-child {
+      text-align: right;
+    }
+    &:nth-last-child(2) {
+      text-align: center;
+    }
+  }
+}
+
+.tab-content > .tab-pane {
+  display: none;
+}
+.tab-content > .active {
+  display: block;
+}
+.info-varonil {
+  .col-xs-6:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  height: 496px;
+  font-family: "calibriregular", $font_calibri, $font_sans;
+  .padding-fut {
+    padding: 20px 25px;
+  }
+  .col-xs-6 {
+    background: #27a66b;
+    text-align: center;
+    color: white;
+  }
+}
+.tit-txt {
+  font-size: 18px;
+  font-family: $font_festivo;
+  text-align: center;
+}
+.tit-color {
+  color: #27a66b;
+  background: white;
+}
+.color-fut-bg {
+  color: #228354;
+  background: url(../images/fut_bg.jpg) no-repeat center center;
+}
+
+
+/// ACADEMIA ///
+.info-fut-academia .col-xs-12:before{
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.info-fut-academia {
+  height: 560px;
+  font-family: $font_festivo;
+  .col-xs-12 {
+    background: #e0e0e0;
+    text-align: center;
+    color: white;
+    z-index: 500;
+  }
+  .horarios-fut {
+    background: url(../images/academia-ninos-futbol.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+.info-alineado-1{
+	display: inline-block;
+	vertical-align: middle;
+}
+.info-alineado-1 {
+  width: 70%;
+}
+.grid-info-fut {
+  font-family: "calibriregular", $font_calibri, $font_sans;
+  height: 560px;
+  [class^="col-"] {
+    text-align: center;
+    color: white;
+    z-index: 500;
+    height: 100%;
+  }
+  .info-4 {
+    font-size: 16px;
+    font-family: "calibriregular", $font_calibri, $font_sans;
+  }
+  .tit-grid {
+    font-size: 30px;
+    margin: -100px auto 10px;
+  }
+  .fut-conocenos {
+    background: #27a66b;
+  }
+  .fut-metodo {
+    background: #5ccb7e;
+  }
+  .fut-horario {
+    background: #27a66b;
+  }
+  .canchita {
+    width: 310px;
+    height: 176px;
+    text-align: center;
+    background: url(../images/cancha-horarios.png) no-repeat center center;
+    background-size: contain;
+    margin: 0 auto;
+    padding-top: 49px;
+  }
+}
+.horarios {
+    font-size: 25px;
+    line-height: 1;
+    text-align: center;
+}
+.info-fut-academia .col-xs-12:before, .info-fut-renta .col-xs-12:before{
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+/// RENTA ///
+.info-fut-renta {
+  height: 560px;
+  font-family: $font_festivo;
+  .col-xs-12 {
+    background: #e0e0e0;
+    text-align: center;
+    color: white;
+    z-index: 500;
+  }
+  .horarios-renta {
+    background: url(../images/renta.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  .info-3-1 {
+    font-size: 29px;
+    font-family: $font_festivo;
+    margin-bottom: 50px;
+  }
+}
+
+/// MURAL ///
+.mural-content, .mural-content .col-xs-4{
+	padding: 0;
+	margin: 0;
+}
+/// INSTAGRAM ///
+.insta-img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.insta-avierto {
+  padding: 0;
+  margin: 0;
+  div {
+    padding: 0;
+    margin: 0;
+  }
+  .insta-content {
+    [class^="col-"] {
+      @include calc(width, "100% / 8");
+    }
+  }
+}
+
+// .container-insta {
+//   height: 22.1vh;
+//   width: 12.5vw;
+//   background: #f7f7f7;
+//   display: block;
+//   overflow: hidden;
+//   float: left;
+// }
+
+// .container-insta:before {
+//   content: "";
+//   display: inline-block;
+//   height: 100%;
+//   vertical-align: middle;
+// }
+
+
+/////
+.scroll-futbol {
+  top: 85vh;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 700;
+  a {
+    font: 700 12px/1 $font_opensans, $font_sans;
+    //font: 400 16px/1 $font_festivo;
+    color: white;
+    text-transform: uppercase;
+    &:focus {
+      outline: 0;
+      text-decoration: none;
+    }
+    &:first-child {
+      margin-left: 14px;
+    }
+    + a {
+      margin-left: 120px;
+    }
+  }
+}
+
+.texto-align-futbol {
+  font: 400 40px/1 $font_festivo;
+  color: #27a66b;
+  p {
+    font: 400 18px/1 "calibriregular", "Calibri", sans-serif;
+    margin-top: 20px;
+  }
+  span {
+    color: inherit;
+    font-size: 20px;
+    font-family: 'calibriitalic';
+  }
+}
+
+.height-futbol {
+  height: 350px;
+  background: #fff;
+}
+
+.prox-torneos {
+  > div {
+    position: relative;
+    height: 480px;
+    float: left;
+    @include calc(width, "100% / 3");
+    h3 {
+      font-family: "FestivoLettersNo1";
+      font-size: 40px;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $celular-max-size) {
+  .bajar-futbol {
+    top: 65vh;
+  }
+  .scroll-futbol {
+    top: 60vh;
+    a + a {
+        margin-left: 30px;
+    }
+  }
+  .height-futbol {
+      height: auto;
+  }
+  .texto-align-futbol {
+      margin-top: 25px;
+      margin-bottom: 25px;
+  }
+  .futbol-tabs-1 { 
+      font-size: 16px;
+      > li {
+        width: 50vw;
+      }
+  }
+  .futbol-tabs-3 { 
+    > li {
+        width: 100vw;
+    }
+  }
+}
+
+@media screen and (max-width: $celular-max-size) {
+  .insta-avierto {
+    .insta-content {
+      [class^="col-"] {
+        &:nth-last-child(-n+4) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $iphone-max-size) {
+  .prox-torneos {
+    > div {
+      height: auto;
+      width: 100%;
+      padding: 50px 0;
+    }
+  }
+}
+
+@media screen and (max-width: $ipad-min-size) {
+  .grid-info-fut {
+    height: auto;
+    [class^="col-"] {
+        height: auto;
+        padding-bottom: 20px;
+    }
+  }
+  // Instagram
+  .insta-avierto {
+    .insta-content {
+      [class^="col-"] {
+        @include calc(width, "100% / 4");
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $ipad-max-size) {
+  .futbol .title-general-info {
+      margin: 0;
+      padding: 50px 0;
+  }
+  .grid-info-fut {
+      .canchita {
+          width: 100%;
+      }
+  }
+}
+
+@media screen and (max-width: $mac-13 - 100 ) {
+  .info-varonil {
+      height: auto;
+  }
+}
