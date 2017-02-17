@@ -1,3 +1,2 @@
 # Wordpress Projects
-## Code samples
-[SaulDuran.mx](http://saulduran.mx)
+Code samples --- [SaulDuran.mx](http://saulduran.mx)
