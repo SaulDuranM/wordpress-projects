@@ -1,2 +1,2 @@
 # 3A+C
-http://3amasc.com/
+[3A+C](http://3amasc.com)
